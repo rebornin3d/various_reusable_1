@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       data = fetchData;
       data.forEach((element) {
-        imagesUrl.add(element['title']);
+        imagesUrl.add(element['thumbnailUrl']);
       });
     });
   }

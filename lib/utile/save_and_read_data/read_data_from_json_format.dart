@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 Future<Album> fetchAlbum() async {
-  final response = await http
-      .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
+  final response =
+      await http.get(Uri.parse('https://jsonplaceholder.typicode.com/albums'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
@@ -73,16 +73,14 @@ class _MyAppState extends State<MyApp> {
             future: futureAlbum,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return
-                  Column(children:[
-                    Text(//snapshot.data!.userId.toString() +
+                return Column(children: [
+                  Text(//snapshot.data!.userId.toString() +
                       snapshot.data!.id.toString()),
-                    Text(//snapshot.data!.userId.toString() +
-                        snapshot.data!.userId.toString()),
-                    Text(//snapshot.data!.userId.toString() +
-                        snapshot.data!.title)
-                  ]);
-
+                  Text(//snapshot.data!.userId.toString() +
+                      snapshot.data!.userId.toString()),
+                  Text(//snapshot.data!.userId.toString() +
+                      snapshot.data!.title)
+                ]);
 
                 // snapshot.data!.title);
               } else if (snapshot.hasError) {

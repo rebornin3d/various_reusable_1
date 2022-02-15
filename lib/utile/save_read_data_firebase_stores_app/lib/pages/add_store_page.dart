@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/utile/save_read_data_firebase_stores_app/lib/models/view_models/add_store_view_model.dart';
 import 'package:grocery_app/models/view_models/add_store_view_model.dart';
 
 class AddStorePage extends StatelessWidget {
@@ -8,7 +9,7 @@ class AddStorePage extends StatelessWidget {
   AddStoreViewModel _addStoreVM = AddStoreViewModel();
 
   void _saveStore(BuildContext context) {
-    if (_formKey.currentState.validate()) {
+    if (_formKey.currentState!.validate()) {
       _addStoreVM.saveStore();
     }
   }
@@ -26,7 +27,7 @@ class AddStorePage extends StatelessWidget {
                 TextFormField(
                   onChanged: (value) => _addStoreVM.storeName = value,
                   validator: (value) {
-                    if (value.isEmpty) {
+                    if (value!.isEmpty) {
                       return "Please enter store name";
                     }
                     return null;

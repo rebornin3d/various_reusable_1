@@ -48,16 +48,28 @@ dependencies:
   json_annotation: ^4.4.0
   firebase: ^9.0.2
   dcdg: ^4.0.1
+  cloud_firestore: ^3.1.6
+  firebase_core: ^1.11.0
+  firebase_auth: ^3.3.6
+  firebase_storage: ^10.2.6
+  pdf: ^3.7.1
+  provider: ^6.0.2
+  flutter_redux: ^0.8.2
+  pedantic: ^1.11.1
+  redux: ^5.0.0
+  url_launcher: ^6.0.20
+  built_value: ^8.1.4
+  built_collection: ^5.1.1
+  build_runner: ^2.1.7
+  built_value_generator: ^8.1.4
+  
+ 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+
   flutter_lints: ^1.0.0
 
 # For information on the generic Dart part of this file, see the

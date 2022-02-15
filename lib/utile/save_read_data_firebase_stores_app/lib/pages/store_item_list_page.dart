@@ -9,7 +9,7 @@ class StoreItemListPage extends StatelessWidget {
 
   final _formKey = GlobalKey<FormState>();
 
-  String _validate(String value) {
+  String? _validate(String value) {
     if(value.isEmpty) {
       return "Field cannot be empty";
     }

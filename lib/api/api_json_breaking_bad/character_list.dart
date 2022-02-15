@@ -60,6 +60,7 @@ class _CharacterListState extends State<CharacterList> {
         title: Text("Breaking Bad Characters"),
       ),
       body: Container(
+
         child: ListView.builder(
           itemCount: characterList.length,
           itemBuilder: (context, index) {

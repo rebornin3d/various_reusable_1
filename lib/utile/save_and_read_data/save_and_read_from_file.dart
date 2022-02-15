@@ -23,6 +23,7 @@ class CounterStorage {
 
   Future<File> get _localFile async {
     final path = await _localPath;
+    print('pathhhhh is $path/counter.txt');
     return File('$path/counter.txt');
   }
 
@@ -85,10 +86,14 @@ class _FlutterDemoState extends State<FlutterDemo> {
       appBar: AppBar(
         title: const Text('Reading and Writing Files'),
       ),
-      body: Center(
-        child: Text(
-          'Button tapped $_counter time${_counter == 1 ? '' : 's'}.',
-        ),
+      body: Column(
+        children: [
+          Center(
+            child: Text(
+              'Button tapped $_counter time${_counter == 1 ? '' : 's'}.',
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,

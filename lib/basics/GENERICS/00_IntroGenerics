@@ -1,0 +1,6 @@
+What is generics ?
+Generics are used to ensure that the Objects or functions
+we manipulate are of the same data type or say type safe to use.
+
+we can’t hold objects of different types while using generics
+as it follows type safety.

@@ -1,0 +1,16 @@
+Operators
+
+Operators are instance methods with special names.
+Dart allows you to define operators with the following names:
+
+ < 	+ 	| 	>>>
+ > 	/ 	^ 	[]
+ <= 	~/ 	& 	[]=
+ >= 	* 	<< 	~
+ – 	% 	>> 	==
+
+
+ Note: You may have noticed that some operators, like !=,
+ aren’t in the list of names. That’s because they’re just
+ syntactic sugar. For example, the expression
+  e1 != e2 is syntactic sugar for !(e1 == e2).
